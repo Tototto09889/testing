@@ -12,7 +12,7 @@ function init() {
 <div id="content">
 </div>
   <center>
-  <body id="readme_md" style="padding: 20px 20px;"><h2><b><a href="https://telegra.ph/Wibudrive-Project-12-18">"Wibudrive Project"</a></b></h2>
+  <body id="readme_md" style="padding: 20px 20px;"><h5><b><a href="https://telegra.ph/Wibudrive-Project-12-18">"Wibudrive Project"</a></b></h5>
   </body>
   </center>
 <br>
