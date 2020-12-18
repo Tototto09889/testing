@@ -12,11 +12,7 @@ function init() {
 <div id="content">
 </div>
   <center>
-  <div id="readme_md" style="padding: 20px 20px;"><b><h4>"Project List"</b></h4>
-  <ul>
-  <b><a href="https://bio.fakku.ga">NSFW</a></b>
-  <b><a href="https://db.wibudrive.tk">SFW</a></b>
-  </ul>
+  <div id="readme_md" style="padding: 20px 20px;"><b><a href="https://telegra.ph/Wibudrive-Project-12-18">"Wibudrive Project"</a></b></h4>
   </div>
   </center>
 <br>
