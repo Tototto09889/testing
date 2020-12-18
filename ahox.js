@@ -11,8 +11,8 @@ function init() {
 <div>
 <div id="content">
 </div>
+  <div id="readme_md" style="padding: 20px 20px;"><h4>"Project List"</h4>
   <ul>
-  <b>"Project List"</b>
   <li><a href="https://bio.fakku.ga">NSFW</a></li>
   <li><a href="https://db.wibudrive.tk">SFW</a></li>
   </ul>
