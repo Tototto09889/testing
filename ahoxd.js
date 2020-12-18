@@ -12,10 +12,10 @@ function init() {
 <div id="content">
 </div>
   <center>
-  <div id="readme_md" style="padding: 20px 20px;"><h4>"Project List"</h4>
+  <div id="readme_md" style="padding: 20px 20px;"><b><h4>"Project List"</b></h4>
   <ul>
-  <li><a href="https://bio.fakku.ga">NSFW</a></li>
-  <li><a href="https://db.wibudrive.tk">SFW</a></li>
+  <b><a href="https://bio.fakku.ga">NSFW</a></b>
+  <b><a href="https://db.wibudrive.tk">SFW</a></b>
   </ul>
   </div>
   </center>
