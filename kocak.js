@@ -1,4 +1,4 @@
-// Redesigned by rahman from https://t.telegram.ind.in/zxcxzcx which was written by someone else, credits are given on Source Page.
+// Redesigned by t.me/TheFirstSpeedster from https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index which was written by someone else, credits are given on Source Page.
 
 // Initialize the page
 function init() {
@@ -12,7 +12,7 @@ function init() {
 <div id="content">
 </div>
 <br>
-<footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Disesain ulang dengan <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> oleh <a href="https://t.telegram.ind.in/zxcxzcx" target="_blank">Rahman</a></p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
+<footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://telegra.ph/file/0cf49873a39b55bb24804.gif" target="_blank">Rahman Ackerman</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
   `;
 	$('body').html(html);
 }
@@ -212,7 +212,12 @@ function list(path) {
   </div>
   </div>
   <div class="card">
-  <div id="readme_md" style="display:none; padding: 20px 20px;"></div>
+  <div id="readme_md" style="padding: 20px 20px;"><h4>Hallo Guys...</h4>
+  <ul>
+  <li>Ini adalah halaman index untuk team drive wibudrive.</li>
+  <li>Kalau ada masalah bisa kontak saya via <a href="https://t.telegram.ind.in/zxcxzcx">Telegram</a></li>
+  <li>Tolong jangan menyalahgunakan layanan gratis ini.</li>
+  </ul>
   </div>
   </div>
   `;
