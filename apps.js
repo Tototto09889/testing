@@ -12,12 +12,14 @@ function init() {
 <div id="content">
 </div>
 <br>
-<div class="content"><h1 id="Wibudrive">Wibudrive</h1>
+<div id="readme_md" style="padding: 20px;"><h4>Google Personal/Shared Drive Index</h4>
 <ul>
-<li>This Is The Index Page For Our Google Team Drives.</li>
-<li>Do Not Abuse Our Free Service Which Will Lead Us To Revoke Access From All.</li>
+<li>Ini adalah halaman index untuk team drive wibudrive.</li>
+<li>Kalau ada masalah bisa kontak saya via <a href="https://t.telegram.ind.in/zxcxzcx">Telegram</a></li>
+<li>Tolong jangan menyalahgunakan layanan gratis ini.</li>
 </ul>
-<footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://t.telegram.ind.in/zxcxzcx" target="_blank">Rahman</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
+</div>
+<footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://t.telegram.ind.in/zxcxzcx" target="_blank">Rahman Cihuy</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
   `;
 	$('body').html(html);
 }
