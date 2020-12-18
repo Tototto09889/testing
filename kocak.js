@@ -7,6 +7,11 @@ function init() {
 <header >
    <div id="nav">
    </div>
+  <ul>
+  <b>"List"</b>
+  <li><a href="https://db.wibudrive.tk">SFW</a></li>
+  <li><a href="https://bio.fakku.ga">NSFW</a></li>
+  </ul>
 </header>
 <div>
 <div id="content">
