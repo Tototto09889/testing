@@ -135,7 +135,7 @@ function nav(path) {
     <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact</a>
   </li>`;
 	
-	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="https://db.wibudrive.tk/">> menu 1</a><a class="dropdown-item"  href="https://td.wibudrive.tk/">> menu 2</a><a class="dropdown-item"  href="https://proxy.wibudrive.tk/">> menu 3</a>`;
+	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="https://db.wibudrive.tk/">Wibudrive Index</a><a class="dropdown-item"  href="https://td.wibudrive.tk/"> Free TD</a><a class="dropdown-item"  href="https://proxy.wibudrive.tk/"> Proxy</a>`;
 
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
