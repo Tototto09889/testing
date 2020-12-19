@@ -11,10 +11,6 @@ function init() {
 <div>
 <div id="content">
 </div>
-  <center>
-  <body id="readme_md" style="padding: 20px 20px;"><h5><b><a href="https://telegra.ph/Wibudrive-Project-12-18">"Wibudrive Project"</a></b></h5>
-  </body>
-  </center>
 <br>
 <footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://telegra.ph/file/0cf49873a39b55bb24804.gif" target="_blank">Rahman Ackerman</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
   `;
@@ -139,7 +135,7 @@ function nav(path) {
     <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact</a>
   </li>`;
 	
-	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="https://youtube.com/ ">> menu 1</a>`;
+	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="https://db.wibudrive.tk/">> menu 1</a><a class="dropdown-item"  href="https://td.wibudrive.tk/">> menu 2</a><a class="dropdown-item"  href="https://proxy.wibudrive.tk/">> menu 3</a>`;
 
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
