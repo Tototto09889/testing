@@ -135,7 +135,7 @@ function nav(path) {
     <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact</a>
   </li>`;
 	
-	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="https://db.wibudrive.tk/">>Database Index 1</a><a class="dropdown-item"  href="https://db1.wibudrive.tk/">>Database Index 2</a><a class="dropdown-item"  href="https://td.wibudrive.tk/">>Free Unlimited Shared Drive</a><a class="dropdown-item"  href="https://proxy.wibudrive.tk/">>Proxy</a>`;
+	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="https://db.wibudrive.tk/">>Database Index 1</a><a class="dropdown-item"  href="https://db1.wibudrive.tk/">>Database Index 2</a><a class="dropdown-item"  href="https://db2.wibudrive.tk/">>Database Index 3</a><a class="dropdown-item"  href="https://db3.wibudrive.tk/">>Database Index 4</a><a class="dropdown-item"  href="https://td.wibudrive.tk/">>Free Unlimited Shared Drive</a><a class="dropdown-item"  href="https://proxy.wibudrive.tk/">>Proxy</a>`;
 
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
