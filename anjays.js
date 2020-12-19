@@ -130,13 +130,18 @@ function nav(path) {
 			}
 		}
 	}
+	
+	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="https://db.wibudrive.tk/">>Database Index 1</a><a class="dropdown-item"  href="https://db1.wibudrive.tk/">>Database Index 2</a><a class="dropdown-item"  href="https://db2.wibudrive.tk/">>Database Index 3</a><a class="dropdown-item"  href="https://db3.wibudrive.tk/">>Database Index 4</a><a class="dropdown-item"  href="https://td.wibudrive.tk/">>Free Unlimited Shared Drive</a><a class="dropdown-item"  href="https://proxy.wibudrive.tk/">>Proxy</a>`;
+
 
 	html += `</div></li><li class="nav-item">
     <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact</a>
   </li>`;
 	
-	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="https://db.wibudrive.tk/">>Database Index 1</a><a class="dropdown-item"  href="https://db1.wibudrive.tk/">>Database Index 2</a><a class="dropdown-item"  href="https://db2.wibudrive.tk/">>Database Index 3</a><a class="dropdown-item"  href="https://db3.wibudrive.tk/">>Database Index 4</a><a class="dropdown-item"  href="https://td.wibudrive.tk/">>Free Unlimited Shared Drive</a><a class="dropdown-item"  href="https://proxy.wibudrive.tk/">>Proxy</a>`;
-
+	html += `</div></li><li class="nav-item">
+    <a class="nav-link" href="https://dl.kaskus.id/cdn9.1cak.com/posts/6410a1aefe17c004501abb12acdfec4b_t.jpg" target="_blank">About Us</a>
+  </li>`;
+	
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
 	const isMobile = Os.isMobile;
