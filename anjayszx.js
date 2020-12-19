@@ -135,12 +135,8 @@ function nav(path) {
 
 
 	html += `</div></li><li class="nav-item">
-    <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact</a>
+    <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact Person</a>
   </li>`;
-	
-	html += `</div></li><li class="nav-item"><a class="nav-link" href="https://dl.kaskus.id/cdn9.1cak.com/posts/6410a1aefe17c004501abb12acdfec4b_t.jpg" target="_blank">About Us</a></li>`;
-	
-
 	
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
