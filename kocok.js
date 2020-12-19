@@ -86,7 +86,7 @@ function nav(path) {
 	var html = "";
 	var cur = window.current_drive_order || 0;
 	html += `<nav class="navbar navbar-expand-lg ${UI.dark_mode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'}">
-  <a class="navbar-brand" href="/${cur}:/">${UI.logo_image ? '<img border="0" alt="'+UI.company_name+'" src="'+UI.logo_link_name+'" height="30px">' : UI.logo_link_name}</a>
+  <a class="navbar-brand" href="/${cur}:/">${UI.logo_image ? '<img border="0" alt="'+UI.company_name+'" src="'+UI.logo_link_name+'" height="40px">' : UI.logo_link_name}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -130,10 +130,13 @@ function nav(path) {
 			}
 		}
 	}
+	
+	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="https://bio.fakku.ga/">>Bio Index</a><a class="dropdown-item"  href="https://neko.fakku.ga/">>Nekopoi Proxy</a><a class="dropdown-item"  href="https://sukebei.fakku.ga/">>Sukebei Proxy</a>`;
 
 	html += `</div></li><li class="nav-item">
-    <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact</a>
+    <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact Person</a>
   </li>`;
+	
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
 	const isMobile = Os.isMobile;
