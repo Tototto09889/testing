@@ -75,6 +75,20 @@ const uiConfig = {
 	"company_name": "Wibudrive", // Name next to copyright
 	"company_link": "", // link of copyright name
 	"credit": true, // Set this to true to give us credit
+    "project1_name": "Database Index 1",
+    "project1_link": "https://bit.ly/3p7VU8W",
+    "project2_name": "Database Index 2",
+    "project2_link": "https://bit.ly/38lgPPa",
+    "project3_name": "Database Index 3",
+    "project3_link": "https://bit.ly/38sAnkC",
+    "project4_name": "Database Index 4",
+    "project4_link": "https://bit.ly/3mMkACA",
+    "project5_name": "Free Unlimited Shared Drive",
+    "project5_link": "https://bit.ly/3p99bOs",
+    "project6_name": "Public Team Drive",
+    "project6_link": "https://bit.ly/3mzZnLS",
+    "project7_name": "Web Proxy",
+    "project7_link": "https://bit.ly/3rrauKX",
 };
 
 /**
