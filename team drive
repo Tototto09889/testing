@@ -3,7 +3,7 @@ var authConfig = {
   dailyLimit: true, // Whether to limit each mailbox to submit requests only once a day
   client_id: '58094879805-4654k2k5nqdid5bavft7fvea5u9po0t1.apps.googleusercontent.com', // Google Client ID
   client_secret: 'ZNPZ-vS6N9Zjsyb_sNMZmXHL', // Google Client Secret
-  refresh_token: '', // Refresh token
+  refresh_token: '1//0eGI2t1OI_SjMCgYIARAAGA4SNwF-L9Ir7UchSlReCJYJN7uOXklwP9UXjNrbvS5E0cuKCtFd1Sola_LoihWCNXc3P-cC9daZkJ8', // Refresh token
   domain: "domainm.my.id", //College name to display
   black_list: ["example@gmail.com"]
 };
@@ -86,7 +86,7 @@ var html = `
                                         </div>
                                         <br />
                                         <center>
-                                            <button type="submit" class="btn btn-primary">Submit</button> <a class="btn btn-danger" href="http://bit.ly/3aCm7Zh" role="button">Guide</a> <a class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Project<span class="caret"></span></button><ul class="dropdown-menu"><a class="dropdown-item"  href="https://bit.ly/3p7VU8W">>Database Index 1</a><a class="dropdown-item"  href="http://bit.ly/38lgPPa">>Database Index 2</a><a class="dropdown-item"  href="http://bit.ly/38sAnkC">>Database Index 3</a><a class="dropdown-item"  href="http://bit.ly/3mMkACA">>Database Index 4</a><a class="dropdown-item"  href="http://bit.ly/3p99bOs">>Free Unlimited Shared Drive</a><a class="dropdown-item" href="http://bit.ly/3mzZnLS">>Public Team Drive</a><a class="dropdown-item"  href="https://bit.ly/3rrauKX">>Web Proxy</a></a></center>
+                                            <button type="submit" class="btn btn-primary">Submit</button> <a class="btn btn-danger" href="http://bit.ly/3aCm7Zh" role="button">Guide</a> <a class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Project<span class="caret"></span></button><ul class="dropdown-menu"><a class="dropdown-item"  href="https://bit.ly/3p7VU8W" target="_blank">>Database Index 1</a><a class="dropdown-item"  href="http://bit.ly/38lgPPa" target="_blank">>Database Index 2</a><a class="dropdown-item"  href="http://bit.ly/38sAnkC" target="_blank">>Database Index 3</a><a class="dropdown-item"  href="http://bit.ly/3mMkACA" target="_blank">>Database Index 4</a><a class="dropdown-item"  href="http://bit.ly/3p99bOs" target="_blank">>Free Unlimited Shared Drive</a><a class="dropdown-item" href="http://bit.ly/3mzZnLS" target="_blank">>Public Team Drive</a><a class="dropdown-item"  href="https://bit.ly/3rrauKX" target="_blank">>Web Proxy - Page Sandbox</a></a></center>
                                     </form>
                                 </div>
                             </div>
@@ -109,6 +109,7 @@ var html = `
                         </div>
                     </div>
                 </div>
+<footer class="text-muted"> <div class="container"><p style="color:white;font-size:14px;">Copyright © 2020 - <a href="http://bit.ly/34Ahz1N" target="_blank">Wibudrive</a>, All Rights Reserved. Powered by Cloudflare & Google Drive.</p> </div> </footer>
 </body>
 <script>
     var teamDriveThemes;
@@ -177,7 +178,7 @@ var html = `
           }),
           success: function(data) {
             $("#loadMe").modal("hide");
-            document.getElementById("status").innerHTML = "<span style='color: green'><b>Successful<b></span>";
+            document.getElementById("status").innerHTML = "<span style='color: green'><b>Successful! Your unlimited shared drive has been created.</b></span>";
           },
           error: function(request, status, error) {
             $("#loadMe").modal("hide");
