@@ -12,7 +12,7 @@ function init() {
 </div>
 <br>
 <ul>
-<li><form><div class="content"><h4 style="color:red">Attention Please!</h4></li>
+<form><div class="content"><h4 style="color:red">Attention Please!</h4>
 <li>This Is The Index Page For Google Team Drives.</li>
 <li>Join this <a href="http://bit.ly/34Ahz1N">Google Group</a> for access the content in google drive.</li>
 <li>Do not abuse this free service which will Lead me to revoke the access.</li>
