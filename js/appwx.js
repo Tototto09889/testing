@@ -12,12 +12,11 @@ function init() {
 </div>
 <br>
 <ul>
-<form><div class="content"><h4 style="color:red">Attention Please!</h4>
+<form><div class="content"><h4 style="color:red">Attention Please!</h4></ul>
 <li>This Is The Index Page For Google Team Drives.</li>
 <li>Join this <a href="http://bit.ly/34Ahz1N">Google Group</a> for access the content in google drive.</li>
 <li>Do not abuse this free service which will Lead me to revoke the access.</li>
 <li>If you have any questions, feel free to ask me in <a href="https://bit.ly/3hbjqiQ" target="_blank">telegram</a>.</li>
-</ul>
 </div>
 </form>
 <footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://bit.ly/3nGca0t" target="_blank">Rahman Ackerman</a>, based on Open Source Softwares.</p>' : ''} <p>Copyright © ${UI.copyright_year} <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
