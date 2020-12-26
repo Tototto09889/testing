@@ -136,9 +136,7 @@ function nav(path) {
 
 	html += `<div><li class="nav-item"><a class="nav-link" href=" ${UI.animelist_link}" target="_blank"> ${UI.animelist_name}</a></li></div>`;
 	
-	html += `</div></li><li class="nav-item">
-    <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact Person</a>
-  </li>`;
+	html += `<div><li class="nav-item"><a class="nav-link" href="${UI.contact_link}" target="_blank">Contact Person</a></li></div>`;
 	
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
