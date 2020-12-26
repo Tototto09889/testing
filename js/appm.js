@@ -10,7 +10,9 @@ function init() {
 </header><div>
 <div id="content">
 </div>
+<body style="background-image: url(' ${UI.background_link}');">
 <br>
+</body>
 <footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://bit.ly/3nGca0t" target="_blank">Rahman Ackerman</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
   `;
 	$('body').html(html);
@@ -132,6 +134,8 @@ function nav(path) {
 	
 	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href=" ${UI.project1_link}" target="_blank"> ${UI.project1_name}</a><a class="dropdown-item"  href=" ${UI.project2_link}" target="_blank"> ${UI.project2_name}</a><a class="dropdown-item"  href=" ${UI.project3_link}" target="_blank"> ${UI.project3_name}</a><a class="dropdown-item"  href=" ${UI.project4_link}" target="_blank"> ${UI.project4_name}</a><a class="dropdown-item"  href=" ${UI.project5_link}" target="_blank"> ${UI.project5_name}</a><a class="dropdown-item"  href=" ${UI.project6_link}" target="_blank"> ${UI.project6_name}</a><a class="dropdown-item"  href=" ${UI.project7_link}" target="_blank"> ${UI.project7_name}</a>`;
 
+	html += `<div><li class="nav-item"><a class="nav-link" href=" ${UI.animelist_link}" target="_blank"> ${UI.animelist_name}</a></li></div>`;
+	
 	html += `</div></li><li class="nav-item">
     <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact Person</a>
   </li>`;
