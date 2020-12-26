@@ -132,7 +132,9 @@ function nav(path) {
 	
 	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href=" ${UI.project1_link}" target="_blank"> ${UI.project1_name}</a><a class="dropdown-item"  href=" ${UI.project2_link}" target="_blank"> ${UI.project2_name}</a><a class="dropdown-item"  href=" ${UI.project3_link}" target="_blank"> ${UI.project3_name}</a><a class="dropdown-item"  href=" ${UI.project4_link}" target="_blank"> ${UI.project4_name}</a><a class="dropdown-item"  href=" ${UI.project5_link}" target="_blank"> ${UI.project5_name}</a><a class="dropdown-item"  href=" ${UI.project6_link}" target="_blank"> ${UI.project6_name}</a><a class="dropdown-item"  href=" ${UI.project7_link}" target="_blank"> ${UI.project7_name}</a>`;
 	
-	html += `<div><li class="nav-item"><a class="nav-link" href=" ${UI.contact_link}" target="_blank">Contact Person</a></li></div>`;
+	html += `</div></li><li class="nav-item">
+    <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact Person</a>
+  </li>`;
 	
 
 	var search_text = model.is_search_page ? (model.q || '') : '';
