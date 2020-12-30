@@ -1,4 +1,4 @@
-// Redesigned by rahman.
+// Redesigned by t.me/TheFirstSpeedster from https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index which was written by someone else, credits are given on Source Page.
 
 // Initialize the page
 function init() {
@@ -7,18 +7,19 @@ function init() {
 <header >
    <div id="nav">
    </div>
-</header><div>
+</header>
+<div>
 <div id="content">
 </div>
 <br>
-<footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://bit.ly/3nGca0t" target="_blank">Rahman Ackerman</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
+<footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://bit.ly/3nGca0t" target="_blank">Rahman Ackerman</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
   `;
 	$('body').html(html);
 }
 
 const Os = {
 	isWindows: navigator.platform.toUpperCase().indexOf('WIN') > -1, // .includes
-	isMac: navigator.platform.toUpperCase().indexOf('MAC') > -1,d
+	isMac: navigator.platform.toUpperCase().indexOf('MAC') > -1,
 	isMacLike: /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform),
 	isIos: /(iPhone|iPod|iPad)/i.test(navigator.platform),
 	isMobile: /Android|webOS|iPhone|iPad|iPod|iOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
@@ -84,7 +85,7 @@ function nav(path) {
 	var model = window.MODEL;
 	var html = "";
 	var cur = window.current_drive_order || 0;
-	html += `<nav class="navbar navbar-expand-lg ${UI.dark_mode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'}">
+	html += `<nav class="navbar navbar-expand-lg ${UI.dark_mode ? 'navbar-dark bg-dark' : 'navbar-grey bg-grey'}">
   <a class="navbar-brand" href="/${cur}:/">${UI.logo_image ? '<img border="0" alt="'+UI.company_name+'" src="'+UI.logo_link_name+'" height="40px">' : UI.logo_link_name}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -131,7 +132,7 @@ function nav(path) {
 	}
 	
 	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project List</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href=" ${UI.project1_link}" target="_blank"> ${UI.project1_name}</a><a class="dropdown-item"  href=" ${UI.project2_link}" target="_blank"> ${UI.project2_name}</a><a class="dropdown-item"  href=" ${UI.project3_link}" target="_blank"> ${UI.project3_name}</a><a class="dropdown-item"  href=" ${UI.project4_link}" target="_blank"> ${UI.project4_name}</a><a class="dropdown-item"  href=" ${UI.project5_link}" target="_blank"> ${UI.project5_name}</a><a class="dropdown-item"  href=" ${UI.project6_link}" target="_blank"> ${UI.project6_name}</a><a class="dropdown-item"  href=" ${UI.project7_link}" target="_blank"> ${UI.project7_name}</a>`;
-	
+
 	html += `</div></li><li class="nav-item">
     <a class="nav-link" href="${UI.contact_link}" target="_blank">Contact Person</a>
   </li>`;
@@ -697,6 +698,39 @@ function copyToClipboard(str) {
 // Document display video |mp4|webm|avi|
 function file_video(path) {
 	const url = window.location.origin + path;
+	  let player_items = [
+    {
+      text: 'MXPlayer(Free)',
+      href: `intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${path};end`,
+    },
+    {
+      text: 'MXPlayer(Pro)',
+      href: `intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${path};end`,
+    },
+    {
+      text: 'nPlayer',
+      href: `nplayer-${url}`,
+    },
+    {
+      text: 'VLC',
+      href: `vlc://${url}`,
+    },
+    {
+      text: 'PotPlayer',
+      href: `potplayer://${url}`
+    }
+  ]
+    .map(it => `<li class="mdui-menu-item"><a href="${it.href}" class="mdui-ripple">${it.text}</a></li>`)
+    .join('');
+  player_items += `<li class="mdui-divider"></li>
+                   <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">Copy Link</a></li>`;
+  const playBtn = `
+      <button class="mdui-btn mdui-ripple mdui-color-theme-accent" mdui-menu="{target:'#player-items'}">
+        <i class="mdui-icon material-icons">&#xe039;</i>Play From External Player<i class="mdui-icon material-icons">&#xe5cf;</i>
+      </button>
+      
+      <ul class="mdui-menu" id="player-items">${player_items}</ul>`;
+
 	const content = `
   <link href="https://cdn.jsdelivr.net/gh/jscdn/css@master/video-js/video-js.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/jscdn/js@master/video-js/video-js.min.js"></script>
