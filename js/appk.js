@@ -1,5 +1,5 @@
 // Redesigned by t.me/TheFirstSpeedster from https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index which was written by someone else, credits are given on Source Page.
-
+document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>');
 // Initialize the page
 function init() {
 	document.siteName = $('title').html();
