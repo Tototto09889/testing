@@ -697,90 +697,45 @@ function copyToClipboard(str) {
 
 // Document display video |mp4|webm|avi|
 function file_video(path) {
- const url = window.location.origin + path;
-  let player_items = [
-    {
-      text: 'MXPlayer(Free)',
-      href: `intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${path};end`,
-    },
-    {
-      text: 'MXPlayer(Pro)',
-      href: `intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${path};end`,
-    },
-    {
-      text: 'nPlayer',
-      href: `nplayer-${url}`,
-    },
-    {
-      text: 'VLC',
-      href: `vlc://${url}`,
-    },
-    {
-      text: 'PotPlayer',
-      href: `potplayer://${url}`
-    }
-  ]
-    .map(it => `<li class="mdui-menu-item"><a href="${it.href}" class="mdui-ripple">${it.text}</a></li>`)
-    .join('');
-  player_items += `<li class="mdui-divider"></li>
-                   <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">Copy Link</a></li>`;
-  const playBtn = `
-      <button class="mdui-btn mdui-ripple mdui-color-theme-accent" mdui-menu="{target:'#player-items'}">
-        <i class="mdui-icon material-icons">&#xe039;</i>Play From External Player<i class="mdui-icon material-icons">&#xe5cf;</i>
-      </button>
-      
-      <ul class="mdui-menu" id="player-items">${player_items}</ul>`;
-
-  const content = `
-  
-<div class="mdui-container-fluid">
-	<br>
-	<video class="mdui-video-fluid mdui-center" preload controls>
-	  <source src="${url}" type="video/mp4">
-	</video>
-	<br>${playBtn}
-	<!-- Fixed label -->
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Refrence Adress</label>
-	  <textarea class="mdui-textfield-input"><video><source src="${url}" type="video/mp4"></video></textarea>
-	</div>
-</div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
-	`;
-  $('#content').html(content);
-  $('#copy-link').on('click', () => {
-    copyToClipboard(url);
-    mdui.snackbar('Copied To Clipboard!');
-  });
+	const url = window.location.origin + path;
+	const content = `
+  <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/jscdn/js@master/video-js/video-js.min.js"></script>
+  <div class="container"><br>
+  <div class="card">
+  <div class="card-body text-center">
+  <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
+  <video width="100%" height="auto" controls>
+    <source src="${url}" type="video/mp4" />
+    <source src="${url}" type="video/webm" />
+  </video>
+  </div>
+  <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
+  </div>
+  </div>
+  `;
+	$('#content').html(content);
 }
 
 // File display Audio |mp3|flac|m4a|wav|ogg|
 function file_audio(path) {
-  var url = window.location.origin + path;
-  var content = `
-<div class="mdui-container-fluid">
-	<br>
-	<audio class="mdui-center" preload controls>
-	  <source src="${url}"">
-	</audio>
-	<br>
-	<!-- Fixed label -->
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <textarea class="mdui-textfield-input"><audio><source src="${url}"></audio></textarea>
-	</div>
-</div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
-	`;
-  $('#content').html(content);
+	var url = window.location.origin + path;
+	var content = `
+  <div class="container"><br>
+  <div class="card">
+  <div class="card-body text-center">
+  <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
+  <audio controls>
+    <source src="${url}" type="audio/ogg">
+    <source src="${url}" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  </div>
+  <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
+  </div>
+  </div>
+  `;
+	$('#content').html(content);
 }
 
 // Document display pdf  pdf
