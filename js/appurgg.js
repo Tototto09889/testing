@@ -738,16 +738,24 @@ function file_video(path) {
   <div class="card">
   <div class="card-body text-center">
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
-  <video width="100%" height="auto" controls>
+  <video class="mdui-video-fluid mdui-center" width="100%" height="auto" controls>
     <source src="${url}" type="video/mp4" />
     <source src="${url}" type="video/webm" />
   </video>
+  </div>
+  <div class="mdui-textfield">
+  <label class="mdui-textfield-label">HTML Refrence Adress</label>
+  <textarea class="mdui-textfield-input"><video><source src="${url}" type="video/mp4"></video></textarea>
   </div>
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
   </div>
   </div>
   `;
 	$('#content').html(content);
+	$('#copy-link').on('click', () => {
+    	copyToClipboard(url);
+    	mdui.snackbar('Copied To Clipboard!');
+  });
 }
 
 // File display Audio |mp3|flac|m4a|wav|ogg|
