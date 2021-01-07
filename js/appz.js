@@ -689,18 +689,14 @@ function copyToClipboard(str) {
 function file_video(path) {
 	const url = window.location.origin + path;
 	const content = `
-<link href="https://cdn.jsdelivr.net/gh/indiecdn/videojs-skins@latest/video-js.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/gh/indiecdn/videojs-skins@latest/fantasy/fantasy.css" rel="stylesheet"/> 
-  <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
   <div class="container"><br>
   <div class="card">
   <div class="card-body text-center">
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
-  <video class="video-js vjs-theme-fantasy" width="100%" height="auto" controls>
-    <source src="${url}" type="video/mp4" />
-    <source src="${url}" type="video/webm" />
-  </video>
+  <video width="100%" height="100%" id="bPlayer" controls><source type="video/mp4" src="${url}"/></video>
   </div>
+	${UI.disable_player ? '<style>#mep_0{display:none;}</style>' : ''}
+  <script type="text/javascript">$('#bPlayer').mediaelementplayer();</script>
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
   </div>
   </div>
