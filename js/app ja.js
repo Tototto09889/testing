@@ -689,8 +689,17 @@ function copyToClipboard(str) {
 function file_video(path) {
 	const url = window.location.origin + path;
 	const content = `
-<link href="https://cdn.jsdelivr.net/gh/indiecdn/videojs-skins@latest/fantasy/fantasy.css" rel="stylesheet"/>
-  <script src="https://cdn.jsdelivr.net/gh/jscdn/js@master/video-js/video-js.min.js"></script>
+<link
+  href="https://cdn.jsdelivr.net/gh/indiecdn/videojs-skins@latest/video-js.css"
+  rel="stylesheet"
+/>
+
+<!-- Fantasy CDN -->
+<link
+  href="https://cdn.jsdelivr.net/gh/indiecdn/videojs-skins@latest/fantasy/fantasy.css"
+  rel="stylesheet"
+/>
+  <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
   <div class="container"><br>
   <div class="card">
   <div class="card-body text-center">
