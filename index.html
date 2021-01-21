@@ -1,0 +1,365 @@
+const html = `<!DOCTYPE html>
+<html>
+<title>Wibudrive Project</title>
+<link href="style.css" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://telegra.ph/file/3b29ca150f62a642ec257.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kuro-creator/website-gratis/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kuro-creator/website-gratis/css/Prj-Theme.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kuro-creator/website-gratis/css/Font-Inconsolata.css">
+<style>
+body, html {
+height: 100%;
+font-family: "Inconsolata", sans-serif;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  opacity: 0.4;
+}
+
+#myBtn:hover {
+  background-color: green;
+}
+
+.bgimg {
+background-position: center;
+background-size: cover;
+background-image: url("https://wallpaperaccess.com/full/3440.jpg");
+min-height: 100%;
+}
+
+.menu {
+display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+<div class="w3-row w3-padding w3-black">
+<div class="w3-col s3">
+<a href="#" class="w3-button w3-block w3-red">HOME</a>
+</div>
+<div class="w3-col s3">
+<a href="#project" class="w3-button w3-block w3-yellow">PROJECT</a>
+</div>
+<div class="w3-col s3">
+<a href="#about" class="w3-button w3-block w3-green">ABOUT</a>
+</div>
+<div class="w3-col s3">
+<a href="#contact" class="w3-button w3-block w3-blue">CONTACT</a>
+</div>
+</div>
+</div>
+
+<!-- Back to Top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+<span class="w3"><audio style="display:none;" id="myAudio" controls>
+  <source src="https://db.wibudrive.workers.dev/3:/Pack%207/Demon%20Slayer%20(Hi-Res)/Homura%20-%20LiSA.flac" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio><br>
+<button class="btn btn-warning" onclick="enableAutoplay()" type="button">Music On</button>
+<button class="btn btn-warning" onclick="disableAutoplay()" type="button">Music Off</button></span></div>
+</div>
+<div class="w3-display-middle w3-center">
+<span style="font-size:50px;color:Tomato;"></span>
+</div>
+<div class="w3-display-bottomright w3-center w3-padding-large">
+<span class="w3-text-white"><b>© Wibudrive Project</b></span>
+</div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+
+<!-- Project Container -->
+<div class="w3-container" id="project">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide"><b>PROJECT LIST</b></span></h5>
+
+<div class="w3-row w3-center w3-card w3-padding">
+<a href="javascript:void(0)" onclick="openMenu(event, 'Website');" id="myLink">
+<div class="w3-col s6 tablink">Website</div>
+</a>
+<a href="javascript:void(0)" onclick="openMenu(event, 'Bot');">
+<div class="w3-col s6 tablink">Bot</div>
+</a>
+</div>
+
+<div id="Website" class="w3-container menu w3-padding-48 w3-card">
+         <p><b>Hey there~ All of my projects here are freewares, and i don't even enable any annoying pop-up ads. So, I hope you enjoy it. Tenkyuuu santai bos..... &#128512;<br><br>Source code : <a style="color:red; text-decoration-line: underline;" href="https://github.com/kuro-creator">Github</a></b></p>
+         <div class="row">
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://i.pinimg.com/originals/53/4a/c6/534ac638cfef35665e793f4c9c2068c4.jpg" width="150" height="150">
+                     <h5 class="card-title"><b>Database Index 1</b></h5>
+                     <p class="card-text">Google Drive Index which contains lots of stuff for weebs.</p>
+                     <a href="https://shorten.wibudrive.tk/pjs6jE/" class="btn btn-success">Click Here</a>
+                  </div>
+               </div>
+            </div>
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://i.pinimg.com/originals/53/4a/c6/534ac638cfef35665e793f4c9c2068c4.jpg" width="150" height="150">
+                     <h5 class="card-title"><b>Database Index 2</b></h5>
+                     <p class="card-text">google drive index which contains lots of random stuff.</p>
+                     <a href="https://shorten.wibudrive.tk/SnwRzc" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://i.pinimg.com/originals/53/4a/c6/534ac638cfef35665e793f4c9c2068c4.jpg" width="150" height="150">
+                     <h5 class="card-title"><b>Database Index 3</b></h5>
+                     <p class="card-text">google drive index from some random telegram torrent groups.</p>
+                     <a href="https://shorten.wibudrive.tk/b6wEGQ" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://cdn.shopify.com/s/files/1/0276/0323/9045/products/ZeroTwo-08-Cap-Uniform-Chibi-Ninecolor_1024x1024.jpg?v=1581707275" width="150" height="150">
+                     <h5 class="card-title"><b>Database Index 4</b></h5>
+                     <p class="card-text">google drive index from some random telegram torrent groups.</p>
+                     <a href="https://shorten.wibudrive.tk/XCbhdd" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                    <img src="https://cdn.shopify.com/s/files/1/0276/0323/9045/products/ZeroTwo-08-Cap-Uniform-Chibi-Ninecolor_1024x1024.jpg?v=1581707275" width="150" height="150">
+                     <h5 class="card-title"><b>Free Unlimited Shared Drive</b></h5>
+                     <p class="card-text">Create your own unlimited shared drive for free.</p>
+                     <a href="https://shorten.wibudrive.tk/6WGHBh" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://cdn.shopify.com/s/files/1/0276/0323/9045/products/ZeroTwo-08-Cap-Uniform-Chibi-Ninecolor_1024x1024.jpg?v=1581707275" width="150" height="150">
+                     <h5 class="card-title"><b>Public Team Drive</b></h5>
+                     <p class="card-text">Free team drive access for you guys.</p>
+                     <a href="https://shorten.wibudrive.tk/ydecSx" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://i.pinimg.com/564x/5d/2f/54/5d2f5440cf6bb912aa1bc67cc448048c.jpg" width="150" height="150">
+                     <h5 class="card-title"><b>Wangy Wangy Tool</b></h5>
+                     <p class="card-text">100% Halu<br>100% autis<br>100% Wibu bau bawang</p>
+                     <a href="https://shorten.wibudrive.tk/4RSM8N" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://i.pinimg.com/564x/5d/2f/54/5d2f5440cf6bb912aa1bc67cc448048c.jpg" width="150" height="150">
+                     <h5 class="card-title"><b>Web Proxy - Page Sandbox</b></h5>
+                     <p class="card-text">Web proxy allows you to unblock any blocked website.</p>
+                     <a href="https://shorten.wibudrive.tk/Nphcd4" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>            
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://i.pinimg.com/564x/5d/2f/54/5d2f5440cf6bb912aa1bc67cc448048c.jpg" width="150" height="150">
+                     <h5 class="card-title"><b>Url Shortener</b></h5>
+                     <p class="card-text">URL shortener makes sharing long links more manageable.</p>
+                     <a href="https://shorten.wibudrive.tk/" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>
+        </div>
+</div>
+
+<div id="Bot" class="w3-container menu w3-padding-48 w3-card">
+         <p><b>Hey there~ All of my projects here are freewares, and i don't even enable any annoying pop-up ads. So, I hope you enjoy it. Tenkyuuu santai bos..... &#128512;<br><br>Source code : <a style="color:red; text-decoration-line: underline;" href="https://github.com/kuro-creator">Github</a></b></p>
+         <div class="row">
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://cdn.shopify.com/s/files/1/0078/6563/0831/products/zeroTwo_2_1200x1200.jpg?v=1552807119" width="150" height="150">
+                     <h5 class="card-title"><b>Wibudrive Torrent Bot</b></h5>
+                     <p class="card-text">A bot for torrenting. Interfaces: web, telegram bot.</p>
+                     <a href="https://shorten.wibudrive.tk/piKbps" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://cdn.shopify.com/s/files/1/0078/6563/0831/products/zeroTwo_2_1200x1200.jpg?v=1552807119" width="150" height="150">
+                     <h5 class="card-title"><b>Anime Subtitle Indonesia Bot</b></h5>
+                     <p class="card-text">this is just an abandoned project.</p>
+                     <a href="https://s.telegram.ind.in/Animesubsindo_bot" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>            
+            <div style="display: block; margin: 20px auto;" class="col-sm-4">
+               <div class="card text-center">
+                  <div class="card-body">
+                     <img src="https://cdn.shopify.com/s/files/1/0078/6563/0831/products/zeroTwo_2_1200x1200.jpg?v=1552807119" width="150" height="150">
+                     <h5 class="card-title"><b>Google Drive Uploader Bot</b></h5>
+                     <p class="card-text">Very useful bot.</p>
+                     <a href="https://s.telegram.ind.in/Taikbaubot" class="btn btn-success" target="_blank">Click Here</a>
+                  </div>
+               </div>
+            </div>
+        </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-64"><b><span class="w3-tag w3-wide">ABOUT ME</span></b></h5>
+<p>zero two zero two zero two  ❤️ ❤️ ❤️ WANGI WANGI WANGI WANGI HU HA HU HA HU HA, aaaah baunya rambut zero two wangi aku mau nyiumin aroma wanginya zero two AAAAAAAAH ~ Rambutnya.... aaah rambutnya juga pengen aku elus-elus ~~~~ AAAAAH zero two keluar pertama kali di anime juga manis ❤️ ❤️ ❤️ banget AAAAAAAAH zero two AAAAA LUCCUUUUUUUUUUUUUUU ............ zero two AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️apa ? zero two itu gak nyata ? Cuma HALU katamu ? nggak, ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK PEDULI BANGSAAAAAT !! GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI. ❤️ ❤️ ❤️ zero two gw ...zero two di laptop ngeliatin gw, zero two .. kamu percaya sama aku ? aaaaaaaaaaah syukur zero two aku gak mau merelakan zero two aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH GUA MASIH PUNYA zero two SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAAH</p>
+<div class="w3-panel w3-leftbar w3-light-grey">
+<p><i>"watashi mencintai Zero Two dengan tulus dan penuh kasih sayang"</i></p>
+<p>By Zero Two Owner: Rahman Onii-chan</p>
+<iframe  class="w3-input w3-padding-16 w3-border" height="360" src="https://www.youtube.com/embed/ogV5zuToLEc">
+</iframe>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide"><b>CONTACT ME</b></span></h5>
+
+<p class="text-center"><b>Just send me a message below:</b></p>
+
+<section>
+  <div class="container">
+    <form action="https://formspree.io/f/xaylarpo" method="POST" id="my-form">
+
+      <p><div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Type here..." required>
+      </div></p>
+
+      <p><div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Type here..." required>
+      </div></p>
+
+      <p><div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="subject" id="subject" name="subject" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Type here..." required>
+      </div></p>
+
+      <p><div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Type here..." required></textarea>
+      </div></p>
+
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  <div id="status"></div>
+</section>
+
+<!-- End page content -->
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-- Footer -->
+<footer class="w3-center w3-padding-48 w3-large">
+<p>© 2021 Wibudrive Project, all rights aren't reserved.</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+var i, x, tablinks;
+x = document.getElementsByClassName("menu");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablink");
+for (i = 0; i < x.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+}
+document.getElementById(menuName).style.display = "block";
+evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+
+//Get the button back to top
+var mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//audio function here
+var x = document.getElementById("myAudio");
+
+function enableAutoplay() { 
+  x.autoplay = true;
+  x.load();
+}
+ 
+function disableAutoplay() { 
+  x.autoplay = false;
+  x.load();
+} 
+</script> 
+</body>
+</html>`
+
+async function handleRequest(request) {
+  return new Response(html, {
+    headers: {
+      "content-type": "text/html;charset=UTF-8",
+    },
+  })
+}
+
+addEventListener("fetch", event => {
+  return event.respondWith(handleRequest(event.request))
+})
